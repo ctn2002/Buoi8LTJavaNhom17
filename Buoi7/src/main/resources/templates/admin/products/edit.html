@@ -20,6 +20,7 @@
           enctype = "multipart/form-data">
         <div class="form-group">
             <label for="name">Name</label>
+            <input type="hidden" th:field="*{id}">
             <input class="form-control" type="text" th:field="*{name}" id="name" placeholder="Product Name">
             <div class="alert alert-warning" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
         </div>
