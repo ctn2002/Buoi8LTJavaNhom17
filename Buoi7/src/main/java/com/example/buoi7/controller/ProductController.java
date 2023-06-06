@@ -37,7 +37,7 @@ public class ProductController {
             return "products/edit";
         }
         productService.save(product);
-        return "redirect:/phongban";
+        return "redirect:/products";
     }
 
 }
